@@ -1,0 +1,125 @@
+/* General App styling */
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #b3d9ff; /* Light background color for the entire app */
+  color: #333; /* Dark text color for better readability */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Marquee styling */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #c1d4e8; /* Dark background color */
+  color: white;
+  padding: 10px 0;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  margin: 0;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Logo animation */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Header styling */
+.App-header {
+  background-color: #343a40; /* Dark background color for header */
+  min-height: 60vh; /* Reduced height for a more compact header */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+}
+
+/* Link styling */
+.App-link {
+  color: #007bff; /* Bootstrap primary color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.App-link:hover {
+  color: #0056b3; /* Darker shade on hover */
+  text-decoration: underline;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  .App-header {
+    min-height: 40vh; /* Further reduce height on smaller screens */
+    font-size: calc(8px + 2vmin); /* Adjust font size */
+  }
+}
+
+/* Button styling */
+.button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Card styling */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #343a40a5;
+}
